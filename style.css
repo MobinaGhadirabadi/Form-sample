@@ -1,0 +1,104 @@
+html {
+  font-size: 100%;
+  font-family: "Vazir";
+}
+
+.contianer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.form .form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form label,
+.form input:not([type="checkbox"]) {
+  display: block;
+  margin-bottom: .7rem;
+}
+
+.form input.form-control {
+  width: 95%;
+  font-family: inherit;
+  padding: .6rem .6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,.3);
+  
+}
+
+
+
+
+.checkbox {
+  position: relative;
+  padding-right: 2.1rem;
+  padding-top: .4rem;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox .checkmark {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 4px;
+}
+
+
+.checkbox:hover .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: rgba(0,0,255,.7)	;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  top: 5px;
+  right: 8px;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.butten {
+  margin-top: 0.3rem;
+  font-family: 'Vazir';
+  padding: .3rem 1rem;
+  border-radius: .230rem;
+  border: 1px solid rgba(0,0,0,.4);
+  filter: drop-shadow(3px 0 4px rgba(0,0,0,.3));
+  background-color: white;
+}
+.butten:hover {
+  background-color: rgba(149, 165, 166,.125);
+}
+.form-control:hover {
+  background-color: rgba(149, 165, 166,.100);
+}
